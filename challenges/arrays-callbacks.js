@@ -32,7 +32,7 @@ The zoos need a list of all their animal's names (animal_name only) converted to
 */
 
 const lowCaseAnimalNames = [];
-zooAnimals.map((state) => lowCaseAnimalNames.push(state.animal_name.toLowerCase()))
+zooAnimals.map((state) => lowCaseAnimalNames.push(state.animal_name.toLowerCase()));
 console.log(lowCaseAnimalNames);
 
 /* Request 3: .filter() 
@@ -40,7 +40,9 @@ console.log(lowCaseAnimalNames);
 The zoos are concerned about animals with a lower population count. Using filter, create a new array of objects called lowPopulationAnimals which contains only the animals with a population less than 5.
 
 */
+
 const lowPopulationAnimals = [];
+
 zooAnimals.filter(function(state){
   if (state.population < 5) {
       return lowPopulationAnimals.push(state);
@@ -103,9 +105,9 @@ function greeting(a, b) {
 console.log(consume("Sputnik", "Monroe", greeting));
 
 /* Step 3: Check your work by un-commenting the following calls to consume(): */
-// console.log(consume(2, 2, add)); // 4
-// console.log(consume(10, 16, multiply)); // 160
-// console.log(consume("Mary", "Poppins", greeting)); // Hello Mary Poppins, nice to meet you!
+console.log(consume(2, 2, add)); // 4
+console.log(consume(10, 16, multiply)); // 160
+console.log(consume("Mary", "Poppins", greeting)); // Hello Mary Poppins, nice to meet you!
 
 
 
@@ -116,3 +118,13 @@ Stretch: If you haven't already, convert your array method callbacks into arrow 
 
 */
 
+zooAnimals.forEach(item =>  displayNames.push("Name: " + item.animal_name + ", Scientific: " + item.scientific_name + ".") );
+
+zooAnimals.map((state) => lowCaseAnimalNames.push(state.animal_name.toLowerCase()));
+
+zooAnimals.filter((state) => { if(state.population < 5) return lowPopulationAnimals.push(state); });
+
+zooAnimals.reduce((total, state) => {
+  populationTotal = total + state.population;
+  return populationTotal;
+}, 0);
