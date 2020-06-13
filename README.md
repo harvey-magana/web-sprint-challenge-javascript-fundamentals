@@ -26,14 +26,31 @@ Commit your code regularly and meaningfully. This helps both you (in case you ev
 Be prepared to demonstrate your understanding of this week's concepts by answering questions on the following topics. You might prepare by writing down your own answers before hand.
 
 1. Briefly compare and contrast `.forEach` & `.map` (2-3 sentences max)
+    With `.forEach`, you need to provide an external array to be iterated over. This array method also cannot provide an altered array unless you assign a variable that is an array so that it can put the results there. 
+
+    With the `.mapj` method, everything is done in one place. It can take an array and make a new array from the callback function inside. 
+
+    The characteristics they share are that they are both array methods, they are interator functions, they house a callback function to get their work done. 
 
 2. Explain the difference between a callback and a higher order function.
+    Higher order functions are functions that accept another function as an argument. 
+    Callback functions are that function passed in as the argument. 
+
+    Array methods are a good example of higher order functions because part of what they are is that they can accept a callback function as a parameter inside of them. 
+
+    Callback functions can be declared functions or they can be anonymous functions that get passed into the parameter as an argument into the higher order function and are returned. 
 
 3. What is closure?
+    Closure emerge at the time that a function is created. Within the scope of a funciton a lexical environment is created. This internal environmet shields variables and functions from the global scope or the scope that is outside of the more inner scopes. This state of being inside of the scope gives this data some privacy as well. The inner most function will have access to all of the outer environments up to the global scope. None of the outer scopes will have access to the inner scopes. 
 
 4. Describe the four rules of the 'this' keyword.
+    Rule 1: Window/Global Object Binding, when 'this' is called in the console of a browser, the Window object will be returned. 
+    Rule 2: Implicit Binding, Whenever a preceding dot calls a function, the object before the dot is this. 'this.doSomething...'
+    Rule 3: New binding, Whenever the 'new' keyword is used to create an object, 'this' inside of the funtion is referring back to itself depending on the methods and properties that the constructor is making. 
+    Rule 4: Explicit binding, When using methods like .call() or .apply(), 'this' is pointing to the parameter that the method is used in. 
 
 5. Why do we need super() in an extended class?
+    The use of super() is necessary in classes when a parent class must pass its properties down to its children classes. 
 
 You are expected to be able to answer questions in these areas. Your responses contribute to your Sprint Challenge grade. 
 
