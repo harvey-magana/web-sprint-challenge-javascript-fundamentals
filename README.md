@@ -50,6 +50,7 @@ Be prepared to demonstrate your understanding of this week's concepts by answeri
     Rule 4: Explicit binding, When using methods like .call() or .apply(), 'this' is pointing to the parameter that the method is used in. 
 
 5. Why do we need super() in an extended class?
+    The use of super() is necessary in classes when a parent class must pass its properties down to its children classes. 
 
 You are expected to be able to answer questions in these areas. Your responses contribute to your Sprint Challenge grade. 
 
