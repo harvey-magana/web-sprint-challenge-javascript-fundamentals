@@ -33,6 +33,12 @@ Be prepared to demonstrate your understanding of this week's concepts by answeri
     The characteristics they share are that they are both array methods, they are interator functions, they house a callback function to get their work done. 
 
 2. Explain the difference between a callback and a higher order function.
+    Higher order functions are functions that accept another function as an argument. 
+    Callback functions are that function passed in as the argument. 
+
+    Array methods are a good example of higher order functions because part of what they are is that they can accept a callback function as a parameter inside of them. 
+
+    Callback functions can be declared functions or they can be anonymous functions that get passed into the parameter as an argument into the higher order function and are returned. 
 
 3. What is closure?
 
