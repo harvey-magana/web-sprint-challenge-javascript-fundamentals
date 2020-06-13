@@ -41,6 +41,7 @@ Be prepared to demonstrate your understanding of this week's concepts by answeri
     Callback functions can be declared functions or they can be anonymous functions that get passed into the parameter as an argument into the higher order function and are returned. 
 
 3. What is closure?
+    Closure emerge at the time that a function is created. Within the scope of a funciton a lexical environment is created. This internal environmet shields variables and functions from the global scope or the scope that is outside of the more inner scopes. This state of being inside of the scope gives this data some privacy as well. The inner most function will have access to all of the outer environments up to the global scope. None of the outer scopes will have access to the inner scopes. 
 
 4. Describe the four rules of the 'this' keyword.
 
