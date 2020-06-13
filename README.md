@@ -44,6 +44,10 @@ Be prepared to demonstrate your understanding of this week's concepts by answeri
     Closure emerge at the time that a function is created. Within the scope of a funciton a lexical environment is created. This internal environmet shields variables and functions from the global scope or the scope that is outside of the more inner scopes. This state of being inside of the scope gives this data some privacy as well. The inner most function will have access to all of the outer environments up to the global scope. None of the outer scopes will have access to the inner scopes. 
 
 4. Describe the four rules of the 'this' keyword.
+    Rule 1: Window/Global Object Binding, when 'this' is called in the console of a browser, the Window object will be returned. 
+    Rule 2: Implicit Binding, Whenever a preceding dot calls a function, the object before the dot is this. 'this.doSomething...'
+    Rule 3: New binding, Whenever the 'new' keyword is used to create an object, 'this' inside of the funtion is referring back to itself depending on the methods and properties that the constructor is making. 
+    Rule 4: Explicit binding, When using methods like .call() or .apply(), 'this' is pointing to the parameter that the method is used in. 
 
 5. Why do we need super() in an extended class?
 
