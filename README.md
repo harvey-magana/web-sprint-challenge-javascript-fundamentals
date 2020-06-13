@@ -26,6 +26,11 @@ Commit your code regularly and meaningfully. This helps both you (in case you ev
 Be prepared to demonstrate your understanding of this week's concepts by answering questions on the following topics. You might prepare by writing down your own answers before hand.
 
 1. Briefly compare and contrast `.forEach` & `.map` (2-3 sentences max)
+    With `.forEach`, you need to provide an external array to be iterated over. This array method also cannot provide an altered array unless you assign a variable that is an array so that it can put the results there. 
+
+    With the `.mapj` method, everything is done in one place. It can take an array and make a new array from the callback function inside. 
+
+    The characteristics they share are that they are both array methods, they are interator functions, they house a callback function to get their work done. 
 
 2. Explain the difference between a callback and a higher order function.
 
